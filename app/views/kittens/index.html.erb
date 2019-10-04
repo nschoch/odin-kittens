@@ -1,0 +1,8 @@
+All kittens
+
+<% if @kittens.empty? %>
+  <p>No kittens.</p>
+<% end %>
+<ol class="kittens">
+  <%= render @kittens %>
+</ol>

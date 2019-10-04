@@ -1,0 +1,5 @@
+<li id="kitten-<%= kitten.id %>">
+  <span class="kitten"><%= link_to kitten.name, kitten_path(kitten) %> 
+  <%= link_to 'Destroy', kitten, :confirm => 'Are you sure?',
+  :method => :delete %></span>
+</li>

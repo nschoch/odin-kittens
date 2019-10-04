@@ -1,0 +1,6 @@
+<h1>Edit kitten</h1>
+<%= form_with model: @kitten do |f| %>
+  <%= render 'fields', :f => f %>
+  <%= f.submit("Update", class: "btn btn-primary") %>
+  <%= link_to 'Destroy', @kitten, :confirm => 'Are you sure?', :method => :delete %>
+<% end %>
